@@ -8,5 +8,7 @@ function App() {
     </>
   );
 }
-
+/*
+https://stackoverflow.com/questions/62390436/how-to-scroll-fully-to-next-section
+*/
 export default App;

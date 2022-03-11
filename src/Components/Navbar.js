@@ -4,16 +4,16 @@ import { CenterInfo, SideInfo } from './NavData';
 
 const NavbarBox = styled.nav `
 width: 100%;
+box-sizing: border-box;
 display: flex;
 align-items: center;
 justify-content: space-between;
 height: 54px;
 font-size: 14px;
 line-height: 21px;
+padding: 0 32px;
 a {
-  padding-inline-start: 16px;
-  padding-inline-start: 32px;
-  padding: 4 8px;
+  padding: 8px 16px;
   height: 32px;
   text-align: center;
 }
@@ -28,13 +28,13 @@ li {
   display: inline-block;
 }
 li a {
-  padding-inline-start: none;
-  padding: 0 8px;
   text-decoration: none;
   color: black;
+  border-radius: 12px;
+  transition: color .33s ease,background-color .33s ease;
 }
-li:hover {
-  background-color: 
+li a:hover {
+  background-color: rgba(117, 117, 117, 0.2);
 }
 `;
 function Navbar() {
@@ -66,6 +66,7 @@ function Navbar() {
 }
 /*IconTesla - icon
 Products: Model S, Model 3, Model X, Model Y, Solar Roof, Solar Panels
+Products disappear at 1199px
 MenuGeneral: Shop Account Menu
 tesla.com
 */
