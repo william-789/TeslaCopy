@@ -24,12 +24,6 @@ export const ModelX = {
     title: "Model X",
     text: "Order Online for Touchless Delivery",
 }
-export const Model3 = {
-    heroId:"Model3",
-    backgroundFile: Model3img, 
-    title: "Model 3",
-    text: "Order Online for Touchless Delivery",
-}
 export const SolarPanels = {
     heroId:"Panels",
     backgroundFile: Model3img, 
