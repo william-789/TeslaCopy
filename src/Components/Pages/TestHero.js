@@ -10,11 +10,32 @@ height: 100vh;
 background-position: center;
 background-size: cover;
 flex-direction: column;
-align-items: space-between;
-justify-content: center;
+justify-content: space-between;
+align-items: center;
+padding: 16.5vh 0;
+box-sizing: border-box;
 `;
 const TextBox = styled.div `
 text-align: center;
+h1 {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 48px;
+  margin: 0;
+}
+p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0;
+  padding-top: 6px;
+}
+p a {
+  color: #000;
+  text-decoration: none;
+  border-bottom: 1px solid #000;
+  outline-offeset: 2px;
+}
 `;
 const ButtonBox = styled.div `
 display: flex;
@@ -26,6 +47,18 @@ button {
     padding: 10px;
     margin: 0 10px;
     border-radius: 20px;
+    width: 264px;
+    height: 40px;
+    border: none;
+    backdrop-filter: blur(8px);
+}
+.button1 {
+  background-color: rgba(23, 26, 32, 0.8);
+  color: #fff;
+}
+.button2 {
+  background-color: rgba(244, 244, 244, 0.65);
+  color: #000;
 }
 `;
 function TestHero() {
@@ -33,10 +66,11 @@ function TestHero() {
     <HeroSection id='Model3'>
         <TextBox>
             <h1>Model 3</h1>   
-            <p>Order Online for Touchless Delivery</p>
+            <p>Order Online for <a href='#'>Touchless Delivery</a></p>
         </TextBox>
         <ButtonBox>
-
+          <a><button className='button1'>CUSTOM ORDER</button></a>
+          <a><button className='button2'>EXISTING INVENTORY</button></a>
         </ButtonBox>
         
     </HeroSection>
@@ -46,6 +80,7 @@ function TestHero() {
 //heroId - ok, backgroundFile - ok, title, text
 /*Missing -->
 text: fonts and sizes
+textbox p fontweight doesnt work
 p: a and a styling
 button: sizes, padding and margin*/
 export default TestHero

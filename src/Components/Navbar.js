@@ -8,10 +8,12 @@ box-sizing: border-box;
 display: flex;
 align-items: center;
 justify-content: space-between;
-height: 54px;
+height: 56px;
 font-size: 14px;
 line-height: 21px;
 padding: 0 32px;
+background-color: transparent;
+position: fixed;
 a {
   padding: 8px 16px;
   height: 32px;
@@ -67,7 +69,9 @@ function Navbar() {
 /*IconTesla - icon
 Products: Model S, Model 3, Model X, Model Y, Solar Roof, Solar Panels
 Products disappear at 1199px
+Missing: smooth transition products hover
 MenuGeneral: Shop Account Menu
+
 tesla.com
 */
 
