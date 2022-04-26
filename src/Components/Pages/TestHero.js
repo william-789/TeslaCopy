@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Model3img from './1-Model-3.jpg'
+import Model3imgMobile from './1-Model-3-mobile.jpg'
 
 const HeroSection = styled.section `
 width: 100%;
@@ -62,6 +63,15 @@ button {
 }
 `;
 function TestHero() {
+  function BackgroundChanger (){
+    let section = document.getElementById("Model3");
+    if (window.innerWidth < 840) {
+      //next line isn't working
+      section.style.backgroundImage = "url(${Model3imgMobile})";
+    }
+  }
+  //BackgroundChanger ();
+
   return (
     <HeroSection id='Model3'>
         <TextBox>
@@ -77,10 +87,12 @@ function TestHero() {
   )
 }
 
-//heroId - ok, backgroundFile - ok, title, text
+//heroId - ok, backgroundFile - ok, title - ok, text - ok
 /*Missing -->
 text: fonts and sizes
 textbox p fontweight doesnt work
 p: a and a styling
-button: sizes, padding and margin*/
+button: width 100% at 599px
+try mobile bg image at 839px
+*/
 export default TestHero
