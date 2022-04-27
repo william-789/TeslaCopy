@@ -62,6 +62,7 @@ function Navbar() {
             <a href='/'>{info}</a>
           </li>)
         })}
+        <li><a>Menu</a></li>
       </Products>
     </NavbarBox>
   )

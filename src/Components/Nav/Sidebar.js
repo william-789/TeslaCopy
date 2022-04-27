@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import SidebarData from './SidebarData'
+import {SidebarData} from './SidebarData.js'
 import styled from  'styled-components' 
 
 const Navbar = styled.nav `
@@ -16,10 +16,40 @@ const SidebarBox = styled.div `
     background-color: #fff;
     width: 287px; 
     height: 100vh;    
-    position: fixed;
+    position: fixed;   
+    box-sizing: border-box;
+    padding: 4px 32px 48px 32px;
+    top: 0;
+    right: 0;
 }
 .nav-sidebar.show {
     display: flex;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+nav ul li {
+    width: 247px;
+    height: 32px;
+    margin-bottom: 8px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #393c41;
+    font-size: 14px;
+}
+.sidebarHeader {
+    width: 247px;
+    height: 50px;
+}
+.sidebarHeader button {
+    background-color: transparent;
+    border: none;
+    padding: 8px;
+}
+.sidebarHeader button svg {
+    block-size: 24px;
 }
 `;
 function Sidebar() {
@@ -33,11 +63,14 @@ function Sidebar() {
     </Navbar>
     <SidebarBox>
     <nav className={sidebar ? 'nav-sidebar show' : 'nav-sidebar'}>
+    <div className='sidebarHeader'>
+        <button className='menu-bars' onClick={showSidebar}>
+        <svg class="tds-icon tds-icon-close tds-modal-close-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18.53 17.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.748.748 0 0 1-1.06 0 .75.75 0 0 1 0-1.06L10.94 12 5.47 6.53a.75.75 0 1 1 1.06-1.06L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47z" fill='currentColor'></path>
+        </svg>
+        </button>
+    </div>
     <ul>
-        <li className='navbar-toggle'>
-              <a href='#' className='menu-bars'>
-                X
-              </a></li>
         {SidebarData.map((item, index) => {
             return (
                 <li key={index}>
