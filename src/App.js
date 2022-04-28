@@ -1,7 +1,6 @@
 import './App.css';
 import Navbar from './Components/Navbar';
 import TestHero from './Components/Pages/TestHero';
-import Sidebar from './Components/Nav/Sidebar';
 
 function App() {
   return (
@@ -19,5 +18,6 @@ Navbar,
 Sidebar,
 Sections(id, bg, title, text, buttons),
 Footer
+MISSING: Footer
 */
 export default App;

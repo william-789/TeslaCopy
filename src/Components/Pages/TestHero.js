@@ -89,10 +89,9 @@ function TestHero() {
 
 //heroId - ok, backgroundFile - ok, title - ok, text - ok
 /*Missing -->
-text: fonts and sizes
 textbox p fontweight doesnt work
-p: a and a styling
 button: width 100% at 599px
 try mobile bg image at 839px
+Make it into pattern
 */
 export default TestHero

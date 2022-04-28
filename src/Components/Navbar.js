@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import { CenterInfo, SideInfo , SidebarData} from './NavData';
 
+/*
+MISSING: smooth transition products hover, responsive design
+*/
 const NavbarBox = styled.nav `
 width: 100%;
 box-sizing: border-box;
@@ -36,7 +39,7 @@ li a {
   transition: color .33s ease,background-color .33s ease;
 }
 li a:hover {
-  background-color: rgba(117, 117, 117, 0.2);
+  background-color: rgba(117, 117, 117, 0.12);
 }
 `;
 const SidebarBox = styled.div `
@@ -63,13 +66,19 @@ nav ul li {
     width: 247px;
     height: 32px;
     margin-bottom: 8px;
+    border-radius: 12px;
+    transition: color .33s ease,background-color .33s ease;
+    display: flex;
+}
+nav ul li:hover {
+  background-color: rgba(117, 117, 117, 0.12);
 }
 nav ul li a {
     text-decoration: none;
     color: #393c41;
     font-size: 14px;
     width: 231;
-    padding: 0 8px;
+    padding: 8px 16px;
 }
 .sidebarHeader {
     width: 100%;
@@ -145,7 +154,6 @@ function Navbar() {
 /*IconTesla - icon
 Products: Model S, Model 3, Model X, Model Y, Solar Roof, Solar Panels
 Products disappear at 1199px
-Missing: smooth transition products hover
 MenuGeneral: Shop Account Menu
 
 tesla.com
