@@ -18,6 +18,6 @@ Navbar,
 Sidebar,
 Sections(id, bg, title, text, buttons),
 Footer
-MISSING: Footer
+MISSING: Footer, full delayed scroll, review website
 */
 export default App;
