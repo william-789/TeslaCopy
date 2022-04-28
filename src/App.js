@@ -6,7 +6,8 @@ import Sidebar from './Components/Nav/Sidebar';
 function App() {
   return (
     <>
-    <Sidebar/>
+    <Navbar />
+    <TestHero />
     </>
   );
 }

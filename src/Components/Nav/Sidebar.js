@@ -14,20 +14,21 @@ const SidebarBox = styled.div `
 .nav-sidebar {
     display: none;
     background-color: #fff;
-    width: 287px; 
+    width: 311px; 
     height: 100vh;    
-    position: fixed;   
+    position: absolute;   
     box-sizing: border-box;
-    padding: 4px 32px 48px 32px;
     top: 0;
     right: 0;
 }
 .nav-sidebar.show {
-    display: flex;
+    display: block;
+    transition: 0.5s ease;
 }
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 4px 32px 48px 32px;
 }
 nav ul li {
     width: 247px;
@@ -38,15 +39,21 @@ nav ul li a {
     text-decoration: none;
     color: #393c41;
     font-size: 14px;
+    width: 231;
+    padding: 0 8px;
 }
 .sidebarHeader {
-    width: 247px;
-    height: 50px;
+    width: 100%;
+    height: 80px;
+    padding: 20px;
+    box-sizing: border-box;
 }
 .sidebarHeader button {
     background-color: transparent;
     border: none;
     padding: 8px;
+    float: right;
+    height: 40px;
 }
 .sidebarHeader button svg {
     block-size: 24px;
