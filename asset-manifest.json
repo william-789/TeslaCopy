@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/tesla-copy/static/css/main.1bb2d27f.css",
+    "main.js": "/tesla-copy/static/js/main.d4347ddb.js",
+    "static/media/1-Model-3.jpg": "/tesla-copy/static/media/1-Model-3.372f67ca29f5537fdd31.jpg",
+    "static/media/1-Model-3-mobile.jpg": "/tesla-copy/static/media/1-Model-3-mobile.9d0cf023a37403d693c6.jpg",
+    "static/media/GothamSSm-Medium.woff": "/tesla-copy/static/media/GothamSSm-Medium.0b0cf9455c3c87ba4e09.woff",
+    "index.html": "/tesla-copy/index.html",
+    "main.1bb2d27f.css.map": "/tesla-copy/static/css/main.1bb2d27f.css.map",
+    "main.d4347ddb.js.map": "/tesla-copy/static/js/main.d4347ddb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1bb2d27f.css",
+    "static/js/main.d4347ddb.js"
+  ]
+}
