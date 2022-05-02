@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { CenterInfo, SideInfo , SidebarData} from './NavData';
 
 /*
-MISSING: smooth transition products hover, responsive design
+MISSING: smooth transition products hover
 */
 const NavbarBox = styled.nav `
 width: 100%;
