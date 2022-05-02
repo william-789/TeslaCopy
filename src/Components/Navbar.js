@@ -37,9 +37,20 @@ li a {
   color: black;
   border-radius: 12px;
   transition: color .33s ease,background-color .33s ease;
+  @media (max-width: 1199px){
+    background-color: rgba(117, 117, 117, 0.12);
+  }
 }
 li a:hover {
   background-color: rgba(117, 117, 117, 0.12);
+  @media (max-width: 1199px){
+    background-color: rgba(117, 117, 117, 0.18);
+  }
+}
+@media (max-width: 1199px){
+  li:not(.menu) {
+    display: none;
+  }
 }
 `;
 const SidebarBox = styled.div `
@@ -124,7 +135,7 @@ function Navbar() {
             <a href='/'>{info}</a>
           </li>)
         })}
-        <li onClick={showSidebar}><a>Menu</a></li>
+        <li onClick={showSidebar} className='menu'><a>Menu</a></li>
       </Products>
     </NavbarBox>
     <SidebarBox>

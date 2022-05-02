@@ -13,8 +13,11 @@ background-size: cover;
 flex-direction: column;
 justify-content: space-between;
 align-items: center;
-padding: 16.5vh 0;
+padding: 16vh 0 13vh 0;
 box-sizing: border-box;
+@media (max-width: 768px){
+  background-image: url(${Model3imgMobile});
+}
 `;
 const TextBox = styled.div `
 text-align: center;
@@ -23,6 +26,9 @@ h1 {
   font-weight: 500;
   line-height: 48px;
   margin: 0;
+  @media (max-width: 768px){
+    font-size: 36px;
+  }
 }
 p {
   font-size: 14px;
@@ -51,7 +57,12 @@ button {
     width: 264px;
     height: 40px;
     border: none;
+    box-sizing: border-box;
     backdrop-filter: blur(8px);
+    @media (max-width: 599px) {
+      width: calc(100vw - 50px);
+      margin-bottom: 15px;
+    }
 }
 .button1 {
   background-color: rgba(23, 26, 32, 0.8);
