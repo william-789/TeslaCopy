@@ -6,6 +6,7 @@ body {
   margin: 0;
   font-family: "GothamSSm", sans-serif;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 code {

@@ -1,13 +1,19 @@
 import React from 'react'
-import Hero from '../Hero'
-import Model3 from './MainData'
+import HeroPattern from './HeroPattern'
+import { Acessories, Model3, ModelS, ModelX, ModelY, SolarPanels, SolarRoofs } from './MainData'
 
-function Model3({heroId, backgroundFile, title, text}) {
+function HeroPages() {
   return (
     <>
-    <Hero {...Model3}/>
+    <HeroPattern {...Model3}/>
+    <HeroPattern {...ModelY}/>
+    <HeroPattern {...ModelS}/>
+    <HeroPattern {...ModelX}/>
+    <HeroPattern {...SolarPanels}/>
+    <HeroPattern {...SolarRoofs}/>
+    <HeroPattern {...Acessories}/>
     </>
   )
 }
 
-export default Model3
+export default HeroPages

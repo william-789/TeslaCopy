@@ -67,6 +67,7 @@ const SidebarBox = styled.div `
 .nav-sidebar.show {
     display: block;
     transition: 0.5s ease;
+    z-index: 102;
 }
 nav ul {
     list-style: none;

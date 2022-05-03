@@ -1,12 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
-import Model3img from './1-Model-3.jpg'
-import Model3imgMobile from './1-Model-3-mobile.jpg'
 
 const HeroSection = styled.section `
 width: 100%;
 display: flex;
-background-image: url(${Model3img});
 height: 100vh;
 background-position: center;
 background-size: cover;
@@ -15,9 +12,6 @@ justify-content: space-between;
 align-items: center;
 padding: 16vh 0 13vh 0;
 box-sizing: border-box;
-@media (max-width: 768px){
-  background-image: url(${Model3imgMobile});
-}
 `;
 const TextBox = styled.div `
 text-align: center;
@@ -74,32 +68,24 @@ button {
   color: #000;
 }
 `;
-function TestHero() {
-  function BackgroundChanger (){
-    let section = document.getElementById("Model3");
-    if (window.innerWidth < 840) {
-      //next line isn't working
-      section.style.backgroundImage = "url(${Model3imgMobile})";
-    }
-  }
-  //BackgroundChanger ();
+function TestHero({heroId, backgroundFile, title, text, delivery, button1, button2}) {
 
   return (
-    <HeroSection id='Model3'>
+    <HeroSection id={heroId} style={{ backgroundImage: `url(${backgroundFile})`}}>
         <TextBox>
-            <h1>Model 3</h1>   
-            <p>Order Online for <a href='#'>Touchless Delivery</a></p>
+            <h1>{title}</h1>   
+            <p>{text}<a href='#'>{delivery}</a></p>
         </TextBox>
         <ButtonBox>
-          <a><button className='button1'>CUSTOM ORDER</button></a>
-          <a><button className='button2'>EXISTING INVENTORY</button></a>
+          <a><button className='button1'>{button1}</button></a>
+          {button2 ? <a><button className='button2'>{button2}</button></a> : ''}
         </ButtonBox>
         
     </HeroSection>
   )
 }
 
-//heroId - ok, backgroundFile - ok, title - ok, text - ok
+//heroId - ok, backgroundFile - ok, title - ok, text - ok, delivery - ok, button1 - ok, button2 - ok
 /*Missing -->
 textbox p fontweight doesnt work
 button: width 100% at 599px

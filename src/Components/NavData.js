@@ -1,27 +1,27 @@
 export const CenterInfo = [
     {
         title:"Model S",
-        link:"/ModelS",
+        link:"#ModelS",
     },
     {
         title:"Model 3",
-        link:"/Model3",
+        link:"#Model3",
     },
     {
         title:"Model X",
-        link:"/ModelX",
+        link:"#ModelX",
     },
     {
         title:"Model Y",
-        link:"/ModelY",
+        link:"#ModelY",
     },
     {
         title:"Solar Roof",
-        link:"/Roofs",
+        link:"#Roofs",
     },
     {
         title:"Solar Panels",
-        link:"/Panels",
+        link:"#Panels",
     },    
 ];
 export const SideInfo = [
