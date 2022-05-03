@@ -1,16 +1,21 @@
 {
   "files": {
-    "main.css": "/tesla-copy/static/css/main.1bb2d27f.css",
-    "main.js": "/tesla-copy/static/js/main.e03b49cc.js",
+    "main.css": "/tesla-copy/static/css/main.060d35ef.css",
+    "main.js": "/tesla-copy/static/js/main.548c6a94.js",
     "static/media/1-Model-3.jpg": "/tesla-copy/static/media/1-Model-3.372f67ca29f5537fdd31.jpg",
-    "static/media/1-Model-3-mobile.jpg": "/tesla-copy/static/media/1-Model-3-mobile.9d0cf023a37403d693c6.jpg",
+    "static/media/6-SolarRoof.jpg": "/tesla-copy/static/media/6-SolarRoof.8b5bc82ebf44e8c1f00d.jpg",
+    "static/media/5-SolarPanels.jpg": "/tesla-copy/static/media/5-SolarPanels.ca96bddb758d659d3686.jpg",
+    "static/media/4-Model-Y.jpg": "/tesla-copy/static/media/4-Model-Y.0140b250c2faf1a6f372.jpg",
+    "static/media/3-Model-S.jpg": "/tesla-copy/static/media/3-Model-S.b9fa056d728e17007fcf.jpg",
+    "static/media/2-Model-Y.jpg": "/tesla-copy/static/media/2-Model-Y.e9d7d00db3f8bcebc371.jpg",
+    "static/media/7-Accessories.jpg": "/tesla-copy/static/media/7-Accessories.027ada94d343f5d81f6d.jpg",
     "static/media/GothamSSm-Medium.woff": "/tesla-copy/static/media/GothamSSm-Medium.0b0cf9455c3c87ba4e09.woff",
     "index.html": "/tesla-copy/index.html",
-    "main.1bb2d27f.css.map": "/tesla-copy/static/css/main.1bb2d27f.css.map",
-    "main.e03b49cc.js.map": "/tesla-copy/static/js/main.e03b49cc.js.map"
+    "main.060d35ef.css.map": "/tesla-copy/static/css/main.060d35ef.css.map",
+    "main.548c6a94.js.map": "/tesla-copy/static/js/main.548c6a94.js.map"
   },
   "entrypoints": [
-    "static/css/main.1bb2d27f.css",
-    "static/js/main.e03b49cc.js"
+    "static/css/main.060d35ef.css",
+    "static/js/main.548c6a94.js"
   ]
 }
