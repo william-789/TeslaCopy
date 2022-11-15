@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/tesla-copy/static/css/main.060d35ef.css",
-    "main.js": "/tesla-copy/static/js/main.93cfd278.js",
+    "main.js": "/tesla-copy/static/js/main.8456a9b8.js",
     "static/media/1-Model-3.jpg": "/tesla-copy/static/media/1-Model-3.372f67ca29f5537fdd31.jpg",
     "static/media/6-SolarRoof.jpg": "/tesla-copy/static/media/6-SolarRoof.8b5bc82ebf44e8c1f00d.jpg",
     "static/media/5-SolarPanels.jpg": "/tesla-copy/static/media/5-SolarPanels.ca96bddb758d659d3686.jpg",
@@ -12,10 +12,10 @@
     "static/media/GothamSSm-Medium.woff": "/tesla-copy/static/media/GothamSSm-Medium.0b0cf9455c3c87ba4e09.woff",
     "index.html": "/tesla-copy/index.html",
     "main.060d35ef.css.map": "/tesla-copy/static/css/main.060d35ef.css.map",
-    "main.93cfd278.js.map": "/tesla-copy/static/js/main.93cfd278.js.map"
+    "main.8456a9b8.js.map": "/tesla-copy/static/js/main.8456a9b8.js.map"
   },
   "entrypoints": [
     "static/css/main.060d35ef.css",
-    "static/js/main.93cfd278.js"
+    "static/js/main.8456a9b8.js"
   ]
 }
