@@ -59,7 +59,7 @@ const SidebarBox = styled.div `
     background-color: #fff;
     width: 311px; 
     height: 100vh;    
-    position: absolute;   
+    position: fixed;   
     box-sizing: border-box;
     top: 0;
     right: 0;
