@@ -149,9 +149,9 @@ function Navbar() {
             </button>
           </div>
           <ul>
-            {SidebarData.map((item, index) => {
+            {SidebarData.map((item) => {
               return (
-                <li key={index}>
+                <li key={item.title}>
                   <a href='#'>
                     {item.title}
                   </a>

@@ -54,6 +54,7 @@ button {
     border: none;
     box-sizing: border-box;
     backdrop-filter: blur(8px);
+    cursor: pointer;
     @media (max-width: 599px) {
       width: calc(100vw - 50px);
       margin-bottom: 15px;
